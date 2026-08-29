@@ -1,7 +1,16 @@
 aid: swiftmile
 name: Swiftmile
-description: 'Swiftmile is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Swiftmile is a California-based hardware and IoT company building universal charging and parking
+  infrastructure for micromobility — docking stations that power, secure and organize shared and
+  privately owned e-bikes and e-scooters, including solar-powered units and integrated digital
+  advertising panels. Founded around 2014 and headquartered on the San Francisco Peninsula, it
+  supplied secure charging docks to the New York City DOT public e-bike charging pilot alongside
+  PopWheels and Swobbee. Company interviews describe a fleet- and battery-management backend with
+  integrations offered to micromobility operators, but Swiftmile has never published a public
+  developer program, API reference, SDK, or machine-readable contract of any kind, and as of
+  2026-08-29 swiftmile.com no longer serves the company website at all — the domain answers with a
+  Nexcess hosting placeholder and a TLS certificate that does not match the hostname.
 url: https://raw.githubusercontent.com/api-evangelist/swiftmile/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,13 @@ created: '2026-08-29'
 modified: '2026-08-29'
 tags:
 - Company
+- Micromobility
+- Electric Vehicle Charging
+- Transportation
+- Internet of Things
+- Hardware
+- Smart Cities
+- Fleet Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,37 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/swiftmile-domain-security.yml
+- type: LLMsTxt
+  url: llms/swiftmile-llms.txt
 - type: Website
+  url: https://swiftmile.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/swiftmile-inc/
+- type: SecondaryMarket
   url: https://forgeglobal.com/swiftmile_stock/
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    swiftmile.com no longer serves the Swiftmile website — it answers HTTP 200 with a Nexcess
+    hosting placeholder behind a TLS certificate issued for nxcli.net, has returned that same
+    placeholder in every Internet Archive snapshot since 2025-07-09 (the real WordPress site was
+    still live on 2025-04-21), every interior path including /wp-json/ now 404s, and no api.,
+    developer., docs., app., dashboard. or portal. subdomain resolves.
+  evidence:
+  - url: https://swiftmile.com/
+    status: 200
+  - url: https://swiftmile.com/wp-json/
+    status: 404
+  - url: https://swiftmile.com/.well-known/agent-card.json
+    status: 403
+  - url: https://swiftmile.com/openapi.json
+    status: 404
+  checked: '2026-08-29'

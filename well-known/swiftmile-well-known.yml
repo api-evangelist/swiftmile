@@ -1,0 +1,34 @@
+generated: '2026-08-29'
+method: probed
+source: live HTTPS probes of https://swiftmile.com/.well-known/*
+note: >-
+  Every probed /.well-known/ path on the only host Swiftmile controls returned a 403 from an
+  unconfigured Apache instance, and every other discovery path (/llms.txt, /openapi.json,
+  /swagger.json, /wp-json/, /api-docs, /graphql, /sitemap_index.xml) returned 404. The apex itself
+  answers 200 with a Nexcess hosting placeholder page rather than the company website, so no
+  document of any kind is served. NO WellKnown, SecurityTxt or AgentCard pointer is emitted in
+  apis.yml — this file records a verified absence, not a presence.
+hosts:
+- host: swiftmile.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null

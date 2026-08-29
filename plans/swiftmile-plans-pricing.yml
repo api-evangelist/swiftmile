@@ -1,0 +1,21 @@
+generated: '2026-08-29'
+method: probed
+source: https://swiftmile.com/
+plan_count: 0
+note: >-
+  No pricing or plans of any kind could be read. Swiftmile sells physical micromobility charging
+  hardware and site services to cities, property owners and fleet operators rather than a metered
+  API, and it publishes no developer plans. The check could not even reach a marketing pricing page:
+  as of 2026-08-29 https://swiftmile.com/ answers HTTP 200 with a Nexcess hosting placeholder
+  instead of the company website, and every interior path (including the archived /site-partners/
+  and /advertisers/ pages that carried the commercial pitch) now returns 404. plan_count: 0 is a
+  verified absence, not an unchecked field.
+plans: []
+evidence:
+- url: https://swiftmile.com/
+  status: 200
+  note: Nexcess hosting placeholder page, not the Swiftmile site
+- url: https://swiftmile.com/site-partners/
+  status: 404
+- url: https://swiftmile.com/advertisers/
+  status: 404

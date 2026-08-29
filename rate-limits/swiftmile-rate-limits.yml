@@ -1,0 +1,18 @@
+generated: '2026-08-29'
+method: probed
+source: https://swiftmile.com/
+limit_count: 0
+note: >-
+  Swiftmile publishes no API, so there are no documented rate limits, no rate-limit response headers
+  (X-RateLimit-*, RateLimit-*, Retry-After) and no exhaustion status code to record. Contract
+  discovery found no OpenAPI, GraphQL, MCP, gRPC, WSDL or agent-card surface on any host the company
+  controls, and no api./developer./docs. subdomain resolves. limit_count: 0 records a verified
+  absence, not an unchecked field.
+rate_limits: []
+evidence:
+- url: https://swiftmile.com/openapi.json
+  status: 404
+- url: https://swiftmile.com/api-docs
+  status: 404
+- url: https://swiftmile.com/wp-json/
+  status: 404

@@ -1,0 +1,66 @@
+# Swiftmile
+
+> Swiftmile builds universal charging and parking infrastructure for micromobility — docking
+> stations that power, secure and organize shared and privately owned e-bikes and e-scooters,
+> including solar-powered units and integrated digital advertising panels. It is a hardware and IoT
+> company, not a software vendor with a developer program.
+
+## Status of this file
+
+- generated: 2026-08-29
+- method: generated
+- source: apis.yml + API Evangelist enrichment probes (no provider-published llms.txt exists)
+
+Swiftmile does not publish an llms.txt. `https://swiftmile.com/llms.txt` returned HTTP 404 on
+2026-08-29. This file is written by API Evangelist from the catalog record; it is not a Swiftmile
+document and should not be attributed to Swiftmile.
+
+## API surface
+
+Swiftmile has **no public API surface**. As of 2026-08-29 there is no developer portal, no API
+reference, no SDK, no public repository, and no machine-readable contract (OpenAPI, AsyncAPI,
+GraphQL SDL, gRPC/Protobuf, WSDL, MCP `tools/list`, or A2A agent card) published anywhere API
+Evangelist can reach.
+
+Contract discovery probed, all missing:
+
+- https://swiftmile.com/openapi.json — 404
+- https://swiftmile.com/swagger.json — 404
+- https://swiftmile.com/api-docs — 404
+- https://swiftmile.com/graphql — 404
+- https://swiftmile.com/wp-json/ — 404
+- https://swiftmile.com/.well-known/agent-card.json — 403
+- https://swiftmile.com/.well-known/agent.json — 403
+- api.swiftmile.com, developer.swiftmile.com, docs.swiftmile.com, app.swiftmile.com,
+  dashboard.swiftmile.com, portal.swiftmile.com — no DNS A record
+
+Public interviews with Swiftmile's founders describe a fleet- and battery-management backend whose
+integrations let a third-party or operator app talk to Swiftmile's system. That integration was
+never documented publicly; it is a partner arrangement, not a published API.
+
+## Site status
+
+`https://swiftmile.com/` currently answers HTTP 200 with a **Nexcess hosting placeholder page**,
+not the Swiftmile website, and serves a TLS certificate for `nxcli.net` that does not match the
+hostname. Internet Archive snapshots show the real WordPress marketing site was live through at
+least 2025-04-21 and had been replaced by the placeholder by 2025-07-09; it is still the
+placeholder in the 2026-06-22 and 2026-07-18 snapshots.
+
+## Where the real content used to be (Internet Archive)
+
+- https://web.archive.org/web/20250421123354/https://swiftmile.com/ — Home
+- https://web.archive.org/web/20250421123354/https://swiftmile.com/how-it-works/
+- https://web.archive.org/web/20250421123354/https://swiftmile.com/our-technology/
+- https://web.archive.org/web/20250421123354/https://swiftmile.com/site-partners/
+- https://web.archive.org/web/20250421123354/https://swiftmile.com/advertisers/
+- https://web.archive.org/web/20250421123354/https://swiftmile.com/news/
+
+## Still-live company surfaces
+
+- LinkedIn: https://www.linkedin.com/company/swiftmile-inc/
+- Secondary-market listing: https://forgeglobal.com/swiftmile_stock/
+
+## Contact
+
+Corrections to this profile: https://github.com/api-evangelist/swiftmile/issues or
+info@apievangelist.com
